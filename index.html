@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111613">
+  <meta name="description" content="Portfolio of Egi Apriliansyah — Informatics Engineering graduate working at the intersection of project coordination, software, and people.">
+  <meta property="og:title" content="Egi Apriliansyah — Projects, People & Systems">
+  <meta property="og:description" content="A portfolio of technology projects, project coordination, leadership, and independent visual-design explorations.">
+  <meta property="og:type" content="website">
+  <title>Egi Apriliansyah — Projects, People & Systems</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Egi Apriliansyah, back to top">
+      <span class="brand-mark">EA<span>↗</span></span>
+      <span class="brand-copy"><strong>EGI APRILIANSYAH</strong><small>PORTFOLIO / 2026</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="siteNav"><span></span><span></span></button>
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <a href="#work">Selected work</a>
+      <a href="#visual-stories">Visual stories</a>
+      <a href="#approach">Approach</a>
+      <a href="#experience">Experience</a>
+      <a href="#gallery">The human side</a>
+      <a href="#credentials">Credentials</a>
+      <a class="nav-contact" href="#contact">Say hello <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> INFORMATICS ENGINEERING · PROJECTS · PEOPLE</div>
+        <h1 id="heroTitle">Good work happens where <em>plans meet people.</em></h1>
+        <p class="hero-intro">I’m Egi — an Informatics Engineering graduate drawn to the space between a clear plan, a curious technical mind, and a team moving in the same direction.</p>
+        <p class="hero-detail">I coordinate work, understand the systems behind it, and try to leave every project a little clearer than I found it.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore selected work <span>↘</span></a>
+          <a class="button button-quiet" href="assets/egi-apriliansyah-resume.pdf" download>Download resume <span>↓</span></a>
+        </div>
+        <div class="availability"><span class="availability-pulse"></span> OPEN TO ENTRY-LEVEL OPPORTUNITIES <span class="availability-divider">/</span> PROJECTS & TECHNOLOGY</div>
+      </div>
+
+      <div class="hero-art" aria-label="A visual map connecting people, process, and technology">
+        <div class="art-topline"><span>FIELD NOTE 001</span><span>HOW I THINK</span></div>
+        <div class="constellation">
+          <svg class="orbit-lines" viewBox="0 0 520 520" aria-hidden="true">
+            <circle cx="260" cy="260" r="204" class="orbit orbit-one"/>
+            <circle cx="260" cy="260" r="145" class="orbit orbit-two"/>
+            <ellipse cx="260" cy="260" rx="214" ry="104" transform="rotate(-34 260 260)" class="orbit orbit-three"/>
+            <path d="M83 345 L204 256 L332 184 L422 247" class="constellation-line"/>
+            <path d="M204 256 L235 366 L360 397" class="constellation-line faint"/>
+            <path d="M332 184 L298 90" class="constellation-line faint"/>
+            <circle cx="83" cy="345" r="5" class="node node-rust"/>
+            <circle cx="204" cy="256" r="8" class="node node-lime"/>
+            <circle cx="332" cy="184" r="5" class="node node-cream"/>
+            <circle cx="422" cy="247" r="7" class="node node-rust"/>
+            <circle cx="235" cy="366" r="4" class="node node-cream"/>
+            <circle cx="360" cy="397" r="6" class="node node-lime"/>
+            <circle cx="298" cy="90" r="4" class="node node-rust"/>
+            <path d="M260 45 L260 60 M260 460 L260 475 M45 260 L60 260 M460 260 L475 260" class="crosshair"/>
+          </svg>
+          <div class="art-core"><span class="core-small">THE WORK IS</span><strong>BETWEEN</strong><em>the parts.</em><span class="core-rule"></span><span class="core-note">PEOPLE × PROCESS × PRODUCT</span></div>
+          <div class="art-label label-plan"><span class="label-index">01</span><span>PLAN</span></div>
+          <div class="art-label label-align"><span class="label-index">02</span><span>ALIGN</span></div>
+          <div class="art-label label-deliver"><span class="label-index">03</span><span>DELIVER</span></div>
+          <div class="art-coordinate">BOGOR / WEST JAVA</div>
+          <div class="art-stamp">CURIOUS<br>BY NATURE<br><b>STRUCTURED<br>BY PRACTICE</b></div>
+        </div>
+        <div class="art-bottomline"><span>FIG. A — A PROJECT IS A LIVING SYSTEM</span><span>NOT JUST A CHECKLIST</span></div>
+      </div>
+      <div class="hero-footnote"><span>01 — INTRODUCTION</span><span>SCROLL TO EXPLORE <b>↓</b></span></div>
+    </section>
+
+    <section class="proof-strip" aria-label="Selected project outcomes">
+      <div class="proof-item"><span class="proof-number">25</span><span class="proof-caption">committee members<br>coordinated</span></div>
+      <div class="proof-item"><span class="proof-number">IDR <i>45M</i></span><span class="proof-caption">event budget<br>allocation managed</span></div>
+      <div class="proof-item"><span class="proof-number">500<span class="plus">+</span></span><span class="proof-caption">event attendees<br>supported</span></div>
+      <div class="proof-note">Numbers matter.<br><em>So does the work behind them.</em></div>
+    </section>
+
+    <section class="work-section section-shell" id="work" aria-labelledby="workTitle">
+      <div class="section-heading">
+        <div><div class="eyebrow section-eyebrow">02 / SELECTED WORK</div><h2 id="workTitle">Not just deliverables.<br><em>Decisions, effort, outcomes.</em></h2></div>
+        <p class="section-aside">A selection of projects and roles that show how I organize complexity, contribute technically, and work with people.</p>
+      </div>
+      <div class="filter-bar" role="group" aria-label="Filter projects">
+        <span class="filter-label">SORT THE NOTES</span>
+        <button class="filter-button active" data-filter="all" aria-pressed="true">All work <sup>06</sup></button>
+        <button class="filter-button" data-filter="project" aria-pressed="false">Projects</button>
+        <button class="filter-button" data-filter="technology" aria-pressed="false">Technology</button>
+        <button class="filter-button" data-filter="leadership" aria-pressed="false">Leadership</button>
+        <button class="filter-button" data-filter="creative" aria-pressed="false">Creative</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card project-featured project-misi-card" data-category="technology project">
+          <div class="project-visual visual-misi visual-misi-real">
+            <div class="visual-meta"><span>FREELANCE BUILD / 001</span><span>LIVE WEB APPLICATION</span></div>
+            <div class="misi-real-note misi-real-note-left" aria-hidden="true"><span>01 / LEARN</span><strong>Rights &amp;<br>responsibilities</strong><small>Interactive learning for young citizens.</small></div>
+            <img class="misi-real-poster" src="assets/projects/misi-warga-cilik-cover.webp" alt="Original Misi Warga Cilik cover artwork about children's rights and responsibilities in the environment" width="1080" height="1920" decoding="async" fetchpriority="high">
+            <div class="misi-real-note misi-real-note-right" aria-hidden="true"><span>BUILT WITH</span><strong>Next.js<br>React</strong><small>Comics · quizzes · learning progress</small></div>
+            <span class="visual-index">01</span>
+          </div>
+          <div class="project-body"><div class="project-kicker">FREELANCE / FULL-STACK DEVELOPMENT</div><h3>Misi Warga Cilik</h3><p>A mobile-first educational web app built to help primary-school children explore learning objectives through interactive digital comics and quizzes, in collaboration with a PGSD final-research project.</p><div class="project-tags"><span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>State management</span><span>Vercel</span></div><div class="project-actions"><a class="text-link" href="https://misi-warga-cilik.vercel.app/" target="_blank" rel="noopener noreferrer">Visit live project <span>↗</span></a><button class="text-link case-open" data-case="misi">Read the field notes <span>↗</span></button></div></div>
+        </article>
+
+        <article class="project-card" data-category="project leadership">
+          <div class="project-visual visual-event">
+            <div class="visual-meta"><span>PROJECT LOG / 002</span><span>JUN '24 — JUN '25</span></div>
+            <div class="event-visual-content"><div class="event-orbit"><span class="orbit-center">THE<br>EVENT</span><span class="orbit-point p-one">PLAN</span><span class="orbit-point p-two">PEOPLE</span><span class="orbit-point p-three">DELIVERY</span><span class="orbit-point p-four">BUDGET</span></div><div class="event-mini-stats"><div><b>25</b><small>PEOPLE</small></div><div><b>45M</b><small>IDR BUDGET</small></div><div><b>500+</b><small>ATTENDEES</small></div></div></div>
+            <span class="visual-index">02</span>
+          </div>
+          <div class="project-body"><div class="project-kicker">PROJECT COORDINATION / LEADERSHIP</div><h3>Technology Seminar<br>& Festival</h3><p>Turning a multi-team event into a shared plan — from task ownership and timeline tracking to on-the-ground execution.</p><div class="project-tags"><span>Planning</span><span>Budget coordination</span><span>Stakeholders</span></div><button class="text-link case-open" data-case="event">Read the field notes <span>↗</span></button></div>
+        </article>
+
+        <article class="project-card" data-category="technology project">
+          <div class="project-visual visual-research">
+            <div class="visual-meta"><span>RESEARCH / 003</span><span>FINAL PROJECT</span></div>
+            <div class="tree-diagram"><div class="tree-node root-node">Promotion<br>data</div><div class="tree-branch branch-left"></div><div class="tree-branch branch-right"></div><div class="tree-node child-left">C4.5</div><div class="tree-node child-right">NLG</div><div class="tree-branch leaf-left"></div><div class="tree-branch leaf-right"></div><div class="tree-node leaf-one">Classify</div><div class="tree-node leaf-two">Recommend</div></div>
+            <span class="visual-index">03</span>
+          </div>
+          <div class="project-body"><div class="project-kicker">SOFTWARE & DATA / ACADEMIC RESEARCH</div><h3>Digital Promotion Intelligence</h3><p>A thesis project combining C4.5 decision-tree classification with Natural Language Generation to make historical promotion data more actionable.</p><div class="project-tags"><span>C4.5</span><span>NLG</span><span>Decision support</span></div><button class="text-link case-open" data-case="thesis">Read the field notes <span>↗</span></button></div>
+        </article>
+
+        <article class="project-card" data-category="technology">
+          <div class="project-visual visual-code">
+            <div class="visual-meta"><span>INTERNSHIP / 004</span><span>APPLICATION DEVELOPMENT</span></div>
+            <div class="code-window"><div class="window-top"><i></i><i></i><i></i><span>feature_review.php</span></div><div class="code-lines"><span class="line-no">01</span><span class="code-key">function</span> <span class="code-fn">reviewFeature</span>() {<br><span class="line-no">02</span>&nbsp;&nbsp;<span class="code-key">check</span>(requirements);<br><span class="line-no">03</span>&nbsp;&nbsp;<span class="code-key">test</span>(feature);<br><span class="line-no">04</span>&nbsp;&nbsp;<span class="code-key">resolve</span>(bugs);<br><span class="line-no">05</span>&nbsp;&nbsp;<span class="code-comment">// improve the flow</span><br><span class="line-no">06</span>}</div><div class="code-foot"><span>PHP</span><span>SQL</span><span>TEST → FIX → VERIFY</span></div></div>
+            <span class="visual-index">04</span>
+          </div>
+          <div class="project-body"><div class="project-kicker">SOFTWARE DEVELOPMENT / INTERNSHIP</div><h3>Full-Stack Application Work</h3><p>Contributed to frontend and backend features with PHP and SQL, collaborating with developers on bug identification, fixes, and feature testing.</p><div class="project-tags"><span>PHP</span><span>SQL</span><span>Bug fixing</span></div><button class="text-link case-open" data-case="development">Read the field notes <span>↗</span></button></div>
+        </article>
+
+        <article class="project-card" data-category="leadership project">
+          <div class="project-visual visual-bem">
+            <div class="visual-meta"><span>LEADERSHIP / 005</span><span>JUN '24 — JUN '25</span></div>
+            <div class="bem-map"><div class="bem-center">BEM<br><small>UNIVERSITY</small></div><div class="bem-spoke s1"></div><div class="bem-spoke s2"></div><div class="bem-spoke s3"></div><div class="bem-spoke s4"></div><div class="bem-node n1">01</div><div class="bem-node n2">02</div><div class="bem-node n3">03</div><div class="bem-node n4">04</div><div class="bem-caption">ALIGNING 4 MINISTRIES<br>30+ BOARD MEMBERS</div></div>
+            <span class="visual-index">05</span>
+          </div>
+          <div class="project-body"><div class="project-kicker">ORGANIZATIONAL LEADERSHIP</div><h3>Student Executive Board</h3><p>Coordinated programs across four ministries, supported more than 30 board members, and helped bridge student aspirations with university leadership.</p><div class="project-tags"><span>Leadership</span><span>Communication</span><span>Follow-through</span></div><button class="text-link case-open" data-case="bem">Read the field notes <span>↗</span></button></div>
+        </article>
+
+        <article class="project-card project-wide" data-category="creative">
+          <div class="project-visual visual-content">
+            <div class="visual-meta"><span>CREATIVE WORK / 006</span><span>CONTENT PRODUCTION</span></div>
+            <div class="content-composition"><div class="content-frame frame-a"><span>FRAME 01</span><b>MAKE<br>IT CLEAR.</b><small>VISUAL / MESSAGE</small></div><div class="content-frame frame-b"><span>FRAME 02</span><div class="frame-rings"></div><small>EDIT · REFINE · PUBLISH</small></div><div class="content-note">A good message is planned,<br>crafted, then delivered.</div></div>
+            <span class="visual-index">06</span>
+          </div>
+          <div class="project-body"><div class="project-kicker">CONTENT & COMMUNICATION</div><h3>Digital Content Production</h3><p>Supported social content planning and production, editing visual and audio materials, and coordinating content calendars with a creative team.</p><div class="project-tags"><span>Content calendar</span><span>Editing</span><span>Team coordination</span></div><button class="text-link case-open" data-case="content">Read the field notes <span>↗</span></button></div>
+        </article>
+      </div>
+      <p class="work-disclaimer"><span>NOTE</span> Selected work is summarized to protect internal information. Project materials and examples can be discussed or shared where permission allows.</p>
+    </section>
+
+    <section class="visual-stories-section section-shell" id="visual-stories" aria-labelledby="visualStoriesTitle">
+      <div class="section-heading visual-stories-heading">
+        <div><div class="eyebrow section-eyebrow">03 / VISUAL STORIES</div><h2 id="visualStoriesTitle">Different worlds.<br><em>One visual point of view.</em></h2></div>
+        <p class="section-aside">Three self-initiated landing pages, each paired with its original hero poster — historical editorial, sports identity, and dark narrative design.</p>
+      </div>
+      <div class="creative-intro-row">
+        <p>Beyond software and project coordination, I enjoy shaping how a story feels before a visitor reads a single paragraph. These projects explore typography, pacing, color, and interaction through focused landing-page experiences. Each card now features the actual hero artwork exported from the project, with a larger view and a link to the full landing page.</p>
+        <span class="creative-archive-label"><i></i> DESIGN ARCHIVE / 03 PROJECTS</span>
+      </div>
+
+      <div class="creative-filter-bar" role="group" aria-label="Filter visual design projects">
+        <span class="creative-filter-label">EXPLORE THE DESIGN NOTES</span>
+        <button class="creative-filter-button active" type="button" data-creative-filter="all" aria-pressed="true">All projects <sup>03</sup></button>
+        <button class="creative-filter-button" type="button" data-creative-filter="editorial" aria-pressed="false">Editorial</button>
+        <button class="creative-filter-button" type="button" data-creative-filter="sports" aria-pressed="false">Sports identity</button>
+        <button class="creative-filter-button" type="button" data-creative-filter="archive" aria-pressed="false">Dark narrative</button>
+      </div>
+
+      <div class="creative-grid design-project-grid" id="creativeGrid">
+        <article class="creative-card design-project-card" data-creative-category="editorial" data-creative-id="alexander">
+          <button class="creative-art-trigger design-art-trigger" type="button" data-creative-open aria-label="View the Alexander — The Limit of Ambition hero poster and design notes">
+            <div class="design-art-stage design-alexander design-art-image-stage">
+              <img class="design-art-image" src="assets/designs/alexander-hero.webp" alt="Alexander — The Limit of Ambition, an obsidian and gold historical editorial hero poster" loading="lazy" decoding="async">
+              <span class="design-open-mark" aria-hidden="true">↗</span>
+            </div>
+          </button>
+          <div class="creative-card-copy design-card-copy">
+            <div class="creative-card-kicker"><span>01 / EDITORIAL & HISTORY</span><span class="concept-pill">LANDING PAGE</span></div>
+            <h3>Alexander — The Limit of Ambition</h3>
+            <p>A historical editorial experience balancing marble-inspired imagery, restrained gold accents, and story-led typography to explore ambition, legacy, and impermanence.</p>
+            <div class="creative-tags"><span>Art direction</span><span>Editorial layout</span><span>Typography</span></div>
+            <div class="design-project-actions"><button class="creative-note-link" type="button" data-creative-open>Read design notes <span>↗</span></button><a class="creative-live-link" href="https://rilians.github.io/alexander/" target="_blank" rel="noopener noreferrer">Open landing page <span>↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="creative-card design-project-card" data-creative-category="sports" data-creative-id="brighton">
+          <button class="creative-art-trigger design-art-trigger" type="button" data-creative-open aria-label="View the Brighton — Against the Current hero poster and design notes">
+            <div class="design-art-stage design-brighton design-art-image-stage">
+              <img class="design-art-image" src="assets/designs/brighton-hero.webp" alt="Brighton — Against the Current, an unofficial blue and white football campaign hero poster" loading="lazy" decoding="async">
+              <span class="design-open-mark" aria-hidden="true">↗</span>
+            </div>
+          </button>
+          <div class="creative-card-copy design-card-copy">
+            <div class="creative-card-kicker"><span>02 / SPORTS VISUAL IDENTITY</span><span class="concept-pill">CONCEPT STUDY</span></div>
+            <h3>Brighton — Same Sea, Bolder Tomorrows</h3>
+            <p>An unofficial football-culture concept exploring a coastal visual language through campaign posters, club storytelling, supporter culture, and tactical editorial layouts.</p>
+            <div class="creative-tags"><span>Sports design</span><span>Campaign system</span><span>Visual storytelling</span></div>
+            <div class="design-project-actions"><button class="creative-note-link" type="button" data-creative-open>Read design notes <span>↗</span></button><a class="creative-live-link" href="https://rilians.github.io/brighton/" target="_blank" rel="noopener noreferrer">Open landing page <span>↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="creative-card design-project-card" data-creative-category="archive" data-creative-id="phantomhive">
+          <button class="creative-art-trigger design-art-trigger" type="button" data-creative-open aria-label="View Ciel — The Phantomhive Archive hero poster and design notes">
+            <div class="design-art-stage design-phantomhive design-art-image-stage">
+              <img class="design-art-image" src="assets/designs/phantomhive-hero.webp" alt="Ciel — The Phantomhive Archive, a dark gothic fan-made concept poster" loading="lazy" decoding="async">
+              <span class="design-open-mark" aria-hidden="true">↗</span>
+            </div>
+          </button>
+          <div class="creative-card-copy design-card-copy">
+            <div class="creative-card-kicker"><span>03 / DARK EDITORIAL ARCHIVE</span><span class="concept-pill">FAN CONCEPT</span></div>
+            <h3>Ciel — The Phantomhive Archive</h3>
+            <p>A dark, fictional archive experience using ornate framing, dramatic contrast, and chapter-like storytelling to create the feeling of opening a collector’s edition.</p>
+            <div class="creative-tags"><span>Dark editorial</span><span>Atmosphere</span><span>Landing page</span></div>
+            <div class="design-project-actions"><button class="creative-note-link" type="button" data-creative-open>Read design notes <span>↗</span></button><a class="creative-live-link" href="https://rilians.github.io/the-phantomhive-archive/" target="_blank" rel="noopener noreferrer">Open landing page <span>↗</span></a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="creative-disclaimer"><span class="creative-disclaimer-mark">NOTE</span><p>These are independent portfolio and visual-design explorations, not commissioned client work. The Brighton project is an unofficial concept and is not affiliated with Brighton & Hove Albion. Ciel — The Phantomhive Archive is a fan-made concept; characters and underlying intellectual property remain with their respective rights holders. These pages are presented to demonstrate visual direction, layout, typography, and front-end execution.</p></div>
+    </section>
+
+    <section class="approach-section section-shell" id="approach" aria-labelledby="approachTitle">
+      <div class="section-heading approach-heading">
+        <div><div class="eyebrow section-eyebrow">04 / APPROACH</div><h2 id="approachTitle">Structure is useful.<br><em>People make it work.</em></h2></div>
+        <p class="section-aside">I like plans that are clear enough to guide action, but flexible enough to make room for real people and real problems.</p>
+      </div>
+      <div class="principles-list">
+        <article class="principle"><span class="principle-no">01</span><div class="principle-title"><h3>Make the work visible.</h3><span>PLAN / TRACK / REPORT</span></div><p>Clear ownership, realistic timelines, concise notes, and regular follow-up make it easier for a team to see what is moving — and what is stuck.</p><div class="principle-mark mark-grid" aria-hidden="true"></div></article>
+        <article class="principle"><span class="principle-no">02</span><div class="principle-title"><h3>Translate between worlds.</h3><span>PEOPLE / PROCESS / TECH</span></div><p>My Informatics background helps me understand technical context, while leadership experience has taught me to listen, align expectations, and communicate clearly.</p><div class="principle-mark mark-translate" aria-hidden="true"><span>USER</span><b>↔</b><span>SYSTEM</span></div></article>
+        <article class="principle"><span class="principle-no">03</span><div class="principle-title"><h3>Leave a useful trail.</h3><span>DOCUMENT / LEARN / IMPROVE</span></div><p>Documentation is more than a formality. It preserves decisions, reduces repeated confusion, and gives the next person a better place to start.</p><div class="principle-mark mark-trail" aria-hidden="true"><i></i><i></i><i></i><i></i></div></article>
+      </div>
+    </section>
+
+    <section class="experience-section section-shell" id="experience" aria-labelledby="experienceTitle">
+      <div class="section-heading">
+        <div><div class="eyebrow section-eyebrow">05 / EXPERIENCE</div><h2 id="experienceTitle">A few chapters<br><em>that shaped the work.</em></h2></div>
+        <p class="section-aside">Different environments, one recurring thread: helping people and work move forward with a little more clarity.</p>
+      </div>
+      <div class="experience-layout">
+        <div class="experience-timeline">
+          <article class="experience-item"><div class="experience-date">PROJECT-BASED <span>FREELANCE</span></div><div class="experience-copy"><h3>Freelance Full-Stack Developer</h3><div class="experience-org">Misi Warga Cilik · Educational Web Application</div><p>Built a mobile-first educational web app with Next.js, React, and Tailwind CSS in a technical collaboration supporting a PGSD final-research project. Developed interactive comic and quiz modules with progress tracking, handled routing and responsive UI, and deployed the product on Vercel.</p><div class="mini-tags"><span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>Vercel</span></div></div></article>
+          <article class="experience-item"><div class="experience-date">JUN — SEP 2025 <span>INTERNSHIP</span></div><div class="experience-copy"><h3>Content Creator & Video Editor Assistant</h3><div class="experience-org">Klub Golf Bogor Raya</div><p>Supported social media content planning, visual and audio editing, content calendars, and publication timelines alongside the creative team.</p><div class="mini-tags"><span>Content production</span><span>Timeline coordination</span></div></div></article>
+          <article class="experience-item"><div class="experience-date">FEB — JUN 2025 <span>INTERNSHIP</span></div><div class="experience-copy"><h3>Junior Full-Stack Programmer</h3><div class="experience-org">Klub Golf Bogor Raya</div><p>Worked on frontend and backend application features using PHP and SQL; collaborated on bug identification, fixes, and feature testing.</p><div class="mini-tags"><span>PHP</span><span>SQL</span><span>Testing</span></div></div></article>
+          <article class="experience-item"><div class="experience-date">JUN 2024 — JUN 2025 <span>LEADERSHIP</span></div><div class="experience-copy"><h3>Vice President — Student Executive Board</h3><div class="experience-org">Universitas Binaniaga Indonesia</div><p>Oversaw programs across four ministries and 30+ board members, facilitated weekly coordination, and communicated student concerns to university leadership.</p><div class="mini-tags"><span>Stakeholders</span><span>Leadership</span><span>Risk follow-up</span></div></div></article>
+          <article class="experience-item"><div class="experience-date">JUN 2024 — JUN 2025 <span>PROJECT LEAD</span></div><div class="experience-copy"><h3>Project Manager / Event Chair</h3><div class="experience-org">Technology Seminar & Festival · Universitas Binaniaga Indonesia</div><p>Coordinated 25 committee members, task allocation, project timelines, budget allocation, and event execution for 500+ attendees.</p><div class="mini-tags"><span>Project coordination</span><span>Budget</span><span>Delivery</span></div></div></article>
+        </div>
+        <aside class="education-card"><div class="education-symbol">EA<span>·</span></div><div class="eyebrow">EDUCATION</div><h3>Universitas Binaniaga Indonesia</h3><p class="education-degree">Bachelor of Informatics Engineering<br><span>S.Kom. · Sep 2022 — Sep 2026</span></p><div class="gpa-line"><span>FINAL GPA</span><strong>3.61 <small>/ 4.00</small></strong></div><div class="education-rule"></div><div class="eyebrow">FINAL PROJECT</div><p class="thesis-title">C4.5 integrated with Natural Language Generation for relative digital promotion effectiveness classification and recommendations.</p><span class="education-foot">SOFTWARE SYSTEMS · DATA ANALYSIS</span></aside>
+      </div>
+    </section>
+
+    <section class="gallery-section section-shell" id="gallery" aria-labelledby="galleryTitle">
+      <div class="section-heading gallery-heading">
+        <div><div class="eyebrow section-eyebrow">06 / BEYOND THE DELIVERABLES</div><h2 id="galleryTitle">A little more<br><em>of the person behind the work.</em></h2></div>
+        <p class="section-aside">Projects tell part of the story. These frames make room for the person, the people, and the small moments around the work.</p>
+      </div>
+      <div class="gallery-intro-row">
+        <p>A small visual journal of the person behind the work: a formal portrait, quiet time with notes, a community learning session, and a more casual frame. Different moments, one ongoing story.</p>
+        <span class="gallery-archive-label"><i></i> PERSONAL ARCHIVE / 04 FRAMES</span>
+      </div>
+
+      <div class="photo-gallery" id="photoGallery">
+        <article class="gallery-card gallery-card-portrait is-empty" data-filename="assets/gallery/egi-portrait.jpg" data-title="A portrait of Egi" data-caption="A straightforward portrait for the professional side of this story — calm, present, and ready for the next chapter.">
+          <button class="gallery-frame gallery-frame-portrait gallery-open" type="button" aria-label="Open portrait photo frame">
+            <img class="gallery-photo-img" src="assets/gallery/egi-portrait.jpg" alt="Egi Apriliansyah in a formal dark suit portrait" loading="lazy">
+            <span class="gallery-photo-label">PORTRAIT / 001</span>
+            <div class="gallery-fallback fallback-portrait" aria-hidden="true">
+              <div class="fallback-orbit orbit-a"></div><div class="fallback-orbit orbit-b"></div>
+              <div class="portrait-monogram">EA<span>·</span></div>
+              <div class="portrait-figure"><i class="portrait-head"></i><i class="portrait-neck"></i><i class="portrait-shoulders"></i></div>
+              <span class="fallback-label">PORTRAIT / 001</span>
+              <span class="fallback-note">A face to the<br>name and the work.</span>
+              <span class="fallback-file">PORTRAIT / 001</span>
+            </div>
+            <span class="gallery-frame-corner">01 / FRAME</span>
+            <span class="gallery-view-mark" aria-hidden="true">↗</span>
+          </button>
+          <div class="gallery-caption"><div class="gallery-caption-meta"><span>THE PERSON</span><span>01</span></div><h3>First impressions.</h3><p>A quiet, direct introduction — the person behind the projects, plans, and notes.</p></div>
+        </article>
+
+        <article class="gallery-card gallery-card-work is-empty" data-filename="assets/gallery/project-day.jpg" data-title="The quiet part of the work" data-caption="Reading, reviewing notes, and giving an idea the time it needs before the next step.">
+          <button class="gallery-frame gallery-frame-work gallery-open" type="button" aria-label="Open project work photo frame">
+            <img class="gallery-photo-img" src="assets/gallery/project-day.jpg" alt="Egi reading and reviewing notes outdoors" loading="lazy">
+            <span class="gallery-photo-label">NOTES / 002</span>
+            <div class="gallery-fallback fallback-work" aria-hidden="true">
+              <div class="desk-window"><div class="desk-window-bar"><i></i><i></i><i></i><span>FIELD NOTES / WORKSPACE</span></div><div class="desk-window-content"><div class="desk-code-lines"><b>01</b><span>plan = clarify(goal)</span><b>02</b><span>team.align(people)</span><b>03</b><span>deliver(work)</span><b>04</b><span class="line-comment">// iterate with care</span></div><div class="desk-diagram"><i></i><i></i><i></i><span></span></div></div></div>
+              <span class="fallback-label">NOTES / 002</span><span class="fallback-note">Good work is built<br>one thoughtful step at a time.</span><span class="fallback-file">THE QUIET WORK / 002</span>
+            </div>
+            <span class="gallery-frame-corner">02 / FRAME</span><span class="gallery-view-mark" aria-hidden="true">↗</span>
+          </button>
+          <div class="gallery-caption"><div class="gallery-caption-meta"><span>THE PROCESS</span><span>02</span></div><h3>The quiet part of the work.</h3><p>Not every step looks like a milestone. Some progress begins with reading, thinking, and making sense of the details.</p></div>
+        </article>
+
+        <article class="gallery-card gallery-card-people is-empty" data-filename="assets/gallery/team-moment.jpg" data-title="A digital literacy session" data-caption="Speaking at a community digital-literacy session in November 2025 — sharing ideas is another way to make technology useful.">
+          <button class="gallery-frame gallery-frame-people gallery-open" type="button" aria-label="Open team moment photo frame">
+            <img class="gallery-photo-img" src="assets/gallery/team-moment.jpg" alt="Egi speaking at a community digital literacy event" loading="lazy">
+            <span class="gallery-photo-label">COMMUNITY / 003</span>
+            <div class="gallery-fallback fallback-people" aria-hidden="true">
+              <div class="people-sun"></div><div class="people-horizon"></div>
+              <div class="people-figure figure-one"><i></i><b></b></div><div class="people-figure figure-two"><i></i><b></b></div><div class="people-figure figure-three"><i></i><b></b></div><div class="people-figure figure-four"><i></i><b></b></div>
+              <svg viewBox="0 0 600 260" class="people-threads" aria-hidden="true"><path d="M90 182 L205 126 L320 165 L431 99 L520 151"/><path d="M205 126 L266 73 L431 99"/><circle cx="90" cy="182" r="5"/><circle cx="205" cy="126" r="5"/><circle cx="320" cy="165" r="5"/><circle cx="431" cy="99" r="5"/><circle cx="520" cy="151" r="5"/></svg>
+              <span class="fallback-label">COMMUNITY / 003</span><span class="fallback-note">Ideas matter more<br>when they are shared.</span><span class="fallback-file">DIGITAL LITERACY / 003</span>
+            </div>
+            <span class="gallery-frame-corner">03 / FRAME</span><span class="gallery-view-mark" aria-hidden="true">↗</span>
+          </button>
+          <div class="gallery-caption"><div class="gallery-caption-meta"><span>COMMUNITY & COMMUNICATION</span><span>03</span></div><h3>Taking the floor.</h3><p>A community learning session on digital literacy — communication matters when technology meets everyday life.</p></div>
+        </article>
+
+        <article class="gallery-card gallery-card-away is-empty" data-filename="assets/gallery/off-screen.jpg" data-title="Outside the formal frame" data-caption="A more casual portrait — a reminder that a professional profile is only one part of a person.">
+          <button class="gallery-frame gallery-frame-away gallery-open" type="button" aria-label="Open personal moment photo frame">
+            <img class="gallery-photo-img" src="assets/gallery/off-screen.jpg" alt="A casual portrait of Egi Apriliansyah in a white shirt" loading="lazy">
+            <span class="gallery-photo-label">PERSONAL / 004</span>
+            <div class="gallery-fallback fallback-away" aria-hidden="true">
+              <div class="away-sky"></div><div class="away-sun"></div><div class="away-hill hill-back"></div><div class="away-hill hill-front"></div><div class="away-path"></div><div class="away-plant plant-one"></div><div class="away-plant plant-two"></div>
+              <span class="fallback-label">PERSONAL / 004</span><span class="fallback-note">There is a person<br>behind the professional frame.</span><span class="fallback-file">OUTSIDE THE FORMAL FRAME / 004</span>
+            </div>
+            <span class="gallery-frame-corner">04 / FRAME</span><span class="gallery-view-mark" aria-hidden="true">↗</span>
+          </button>
+          <div class="gallery-caption"><div class="gallery-caption-meta"><span>THE PERSON</span><span>04</span></div><h3>Less formal, still me.</h3><p>A simpler, everyday portrait to balance the formal frames and project stories.</p></div>
+        </article>
+      </div>
+      <div class="gallery-bottom-note"><span class="gallery-note-rule"></span><p>REAL MOMENTS, QUIETLY FRAMED. Natural photographs, considered crops, a fine inner border, and restrained movement — enough to add warmth without competing with the work.</p></div>
+    </section>
+
+    <section class="credentials-section section-shell" id="credentials" aria-labelledby="credentialsTitle">
+      <div class="section-heading">
+        <div><div class="eyebrow section-eyebrow">07 / CREDENTIALS</div><h2 id="credentialsTitle">Learning, made visible.</h2></div>
+        <p class="section-aside">A growing record of learning across project practices, networking, programming, data, and communication — with links to verify each credential.</p>
+      </div>
+      <div class="credential-grid">
+        <a class="credential-card" href="https://www.scrumstudy.com/certification/verify?type=SFC&amp;number=1200710" target="_blank" rel="noopener noreferrer"><div class="credential-top"><span class="credential-code">SFC™</span><span class="external-mark">↗</span></div><div class="credential-issuer">SCRUMSTUDY</div><h3>Scrum Fundamentals Certified</h3><p>Foundational understanding of Scrum and Agile project practices.</p><span class="credential-link">VERIFY CREDENTIAL <b>↗</b></span></a>
+        <a class="credential-card" href="https://www.credly.com/badges/c7e7ad68-5fdc-4872-bbda-99ddee7b4fa6/public_url" target="_blank" rel="noopener noreferrer"><div class="credential-top"><span class="credential-code credential-cisco">CCNA</span><span class="external-mark">↗</span></div><div class="credential-issuer">CISCO / CREDLY</div><h3>Introduction to Networks</h3><p>Networking foundations, including network concepts and connectivity.</p><span class="credential-link">VERIFY CREDENTIAL <b>↗</b></span></a>
+        <a class="credential-card" href="https://www.credly.com/badges/cbf2b6d6-120b-4652-9409-b16be570d2d8/public_url" target="_blank" rel="noopener noreferrer"><div class="credential-top"><span class="credential-code credential-python">Py₁</span><span class="external-mark">↗</span></div><div class="credential-issuer">CISCO / CREDLY</div><h3>Python Essentials 1</h3><p>A programming foundation supporting analytical and technical work.</p><span class="credential-link">VERIFY CREDENTIAL <b>↗</b></span></a>
+        <a class="credential-card" href="https://cms.maxy.academy/certificate/verify/f59af11b-088e-4296-8479-99f5f6f18fc4" target="_blank" rel="noopener noreferrer"><div class="credential-top"><span class="credential-code credential-speech">Aa.</span><span class="external-mark">↗</span></div><div class="credential-issuer">MAXY ACADEMY</div><h3>English Conversation Verbal Test</h3><p>A credential related to spoken English assessment.</p><span class="credential-link">VERIFY CREDENTIAL <b>↗</b></span></a>
+        <a class="credential-card credential-uniathena" href="https://docs.uniathena.com/prod/course/certificate/322_1785017443_certificate.pdf" target="_blank" rel="noopener noreferrer"><div class="credential-top"><span class="credential-code credential-ml">ML<span>↗</span></span><span class="external-mark">↗</span></div><div class="credential-issuer">UNIATHENA × CAMBRIDGE INTERNATIONAL QUALIFICATIONS</div><div class="credential-date">ISSUED 25 JUL 2026</div><h3>Basics of Machine Learning Algorithms</h3><p>Course completed through UniAthena in partnership with Cambridge International Qualifications, UK. The certificate states that authenticity can be checked by QR code.</p><span class="credential-link">OPEN CERTIFICATE <b>↗</b></span></a>
+        <a class="credential-card credential-uniathena" href="https://docs.uniathena.com/prod/course/certificate/323_1785003339_certificate.pdf" target="_blank" rel="noopener noreferrer"><div class="credential-top"><span class="credential-code credential-basics-python">Py<span>↗</span></span><span class="external-mark">↗</span></div><div class="credential-issuer">UNIATHENA × CAMBRIDGE INTERNATIONAL QUALIFICATIONS</div><div class="credential-date">ISSUED 25 JUL 2026</div><h3>Basics of Python</h3><p>Foundational Python course completed through UniAthena in partnership with Cambridge International Qualifications, UK. Blockchain ID: 4030-8135-4424.</p><span class="credential-link">OPEN CERTIFICATE <b>↗</b></span></a>
+      </div>
+      <div class="credential-profile-cta">
+        <div class="credential-profile-mark" aria-hidden="true">C.</div>
+        <div class="credential-profile-copy"><strong>More digital credentials, in one place.</strong><p>Visit my Credly profile to explore the full collection of digital badges and credential records.</p></div>
+        <a class="credential-profile-link" href="https://www.credly.com/users/egi-apriliansyah" target="_blank" rel="noopener noreferrer">VIEW CREDLY PROFILE <span>↗</span></a>
+      </div>
+      <div class="skills-band"><div class="skills-heading"><div class="eyebrow">THE TOOLBOX</div><p>Tools and skills I draw on</p></div><div class="skills-groups"><div><b>PROJECT</b><span>Project coordination</span><span>Progress tracking</span><span>Documentation & reporting</span><span>Stakeholder communication</span><span>Agile / Scrum fundamentals</span></div><div><b>TECHNICAL</b><span>PHP · SQL · Python fundamentals</span><span>Software development lifecycle</span><span>Bug identification & testing</span><span>Networking fundamentals</span></div><div><b>TOOLS & COLLABORATION</b><span>Microsoft Excel</span><span>Microsoft PowerPoint</span><span>Jira / similar tools — personal practice</span><span>Cross-functional teamwork</span></div></div></div>
+    </section>
+
+    <section class="contact-section section-shell" id="contact" aria-labelledby="contactTitle">
+      <div class="contact-panel">
+        <div class="contact-noise" aria-hidden="true"></div>
+        <div class="contact-copy"><div class="eyebrow">08 / THE NEXT CHAPTER</div><h2 id="contactTitle">Good things start<br>with a <em>conversation.</em></h2><p>Have a project to coordinate, a system to make clearer, or a team that needs another thoughtful pair of hands? I'd be glad to connect.</p><div class="contact-actions"><a class="button button-light" href="mailto:egiapriliansyah5@gmail.com">Email me <span>↗</span></a><a class="button button-outline-light" href="https://www.linkedin.com/in/egi-apriliansyah" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span>↗</span></a></div></div>
+        <div class="contact-aside"><div class="contact-orbit"><span>EA</span><i></i><i></i><i></i></div><div class="contact-location"><span>BASED IN</span><strong>Bogor, Indonesia</strong><span>OPEN TO THE RIGHT OPPORTUNITY</span></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell"><a class="footer-brand" href="#top">EA<span>↗</span></a><p>Built with intention, curiosity, and a few well-placed notes.</p><span class="footer-copy">© <span id="currentYear">2026</span> Egi Apriliansyah</span><a href="#top" class="back-top">BACK TO TOP ↑</a></footer>
+
+  <dialog class="creative-dialog" id="creativeDialog" aria-labelledby="creativeDialogTitle">
+    <div class="creative-dialog-head">
+      <div><span class="eyebrow">VISUAL STORIES / PROJECT NOTES</span><h2 id="creativeDialogTitle">Alexander — The Limit of Ambition</h2></div>
+      <button class="dialog-close" id="creativeDialogClose" type="button" aria-label="Close visual study">×</button>
+    </div>
+    <div class="creative-dialog-layout">
+      <div class="creative-dialog-art-wrap" id="creativeDialogArt"></div>
+      <div class="creative-dialog-copy">
+        <span class="creative-dialog-type" id="creativeDialogType">DESIGN / PROJECT NOTES</span>
+        <p id="creativeDialogDescription"></p>
+        <a class="button button-primary creative-dialog-live" id="creativeDialogLiveLink" href="https://rilians.github.io/alexander/" target="_blank" rel="noopener noreferrer">Open live landing page <span>↗</span></a>
+        <div class="creative-dialog-note"><strong id="creativeDialogNoteTitle">Project context</strong><span id="creativeDialogNoteBody">An independent visual-design study.</span></div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="gallery-lightbox" id="galleryLightbox" aria-labelledby="galleryLightboxTitle">
+    <div class="gallery-lightbox-head"><div><span class="eyebrow">PERSONAL ARCHIVE / ENLARGED FRAME</span><h2 id="galleryLightboxTitle">A moment worth keeping.</h2></div><button class="dialog-close gallery-lightbox-close" id="galleryLightboxClose" aria-label="Close photo viewer">×</button></div>
+    <figure><img id="galleryLightboxImage" src="" alt=""><figcaption id="galleryLightboxCaption"></figcaption></figure>
+  </dialog>
+  <dialog class="case-dialog" id="caseDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-head"><span class="eyebrow">PROJECT FIELD NOTES</span><button class="dialog-close" id="dialogClose" aria-label="Close project details">×</button></div>
+    <div id="dialogContent"></div>
+    <div class="dialog-foot"><span>EGI APRILIANSYAH / SELECTED WORK</span><button class="text-link" id="dialogCloseBottom">Close notes <span>×</span></button></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
