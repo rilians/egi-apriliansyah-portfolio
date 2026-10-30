@@ -11,6 +11,7 @@ A responsive, dark-editorial portfolio connecting technology, project coordinati
 - `assets/gallery/` — four user-provided, web-optimized personal photos
 - `assets/designs/` — three web-optimized hero poster exports used in the Visual Stories gallery
 - `assets/projects/misi-warga-cilik-cover.webp` — optimized version of the user-provided portrait cover artwork for Misi Warga Cilik
+- `assets/projects/*-dashboard.webp` and `assets/projects/opis-overview.webp` — optimized screenshots from the README files of the seven featured Python repositories
 
 ## Featured work
 - **Misi Warga Cilik** uses the original user-provided portrait cover artwork, optimized as WebP and displayed in a responsive editorial frame without cropping its key title or characters. Live: https://misi-warga-cilik.vercel.app/
@@ -20,6 +21,7 @@ A responsive, dark-editorial portfolio connecting technology, project coordinati
 - **Full-Stack Application Work** — internship experience using PHP and SQL, including bug identification and feature testing.
 - **Student Executive Board** — organizational leadership and stakeholder coordination.
 - **Digital Content Production** — content-planning and creative-team coordination experience.
+- **Software & Systems** — a focused selection of Python projects: NusaOps (IT service desk and project operations), Valido (Excel/CSV data auditing), and Opis (API health monitoring and incident reporting). Quill & Core, Vanguardia, Navigo, and Axon appear as compact additional builds, with Axon identified as an MVP/demo.
 
 ## Visual Stories — independent design projects
 The Visual Stories section presents three live landing-page explorations, each paired with its actual user-provided hero poster export (WebP) and an enlarged image dialog. The third project is titled “Ciel — The Phantomhive Archive” to keep the visual archive in alphabetical sequence. No video placeholders are included:

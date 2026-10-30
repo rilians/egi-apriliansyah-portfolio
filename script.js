@@ -76,7 +76,7 @@ dialog.addEventListener('click', (event) => { if (event.target === dialog) close
 
 // Filter selected work by category.
 const filterButtons = [...document.querySelectorAll('.filter-button')];
-const projectCards = [...document.querySelectorAll('.project-card')];
+const projectCards = [...document.querySelectorAll('.project-card, .more-build-item[data-category]')];
 filterButtons.forEach(button => button.addEventListener('click', () => {
   const filter = button.dataset.filter;
   filterButtons.forEach(item => {
@@ -88,6 +88,10 @@ filterButtons.forEach(button => button.addEventListener('click', () => {
     const categories = card.dataset.category.split(' ');
     const show = filter === 'all' || categories.includes(filter);
     card.classList.toggle('is-hidden', !show);
+  });
+  document.querySelectorAll('[data-project-group]').forEach(group => {
+    const visibleProjects = group.querySelectorAll('.project-card:not(.is-hidden), .more-build-item:not(.is-hidden)');
+    group.classList.toggle('is-hidden', visibleProjects.length === 0);
   });
 }));
 
@@ -194,6 +198,7 @@ const galleryLightbox = document.getElementById('galleryLightbox');
 const galleryLightboxImage = document.getElementById('galleryLightboxImage');
 const galleryLightboxTitle = document.getElementById('galleryLightboxTitle');
 const galleryLightboxCaption = document.getElementById('galleryLightboxCaption');
+const galleryLightboxEyebrow = document.getElementById('galleryLightboxEyebrow');
 const closeGalleryLightbox = () => { if (galleryLightbox?.open) galleryLightbox.close(); };
 let toastTimeout;
 function showPortfolioToast(message) {
@@ -217,12 +222,32 @@ document.querySelectorAll('.gallery-open').forEach(button => {
     galleryLightboxImage.alt = image.alt || card.dataset.title || 'Portfolio photo';
     galleryLightboxTitle.textContent = card.dataset.title || 'A moment worth keeping.';
     galleryLightboxCaption.textContent = card.dataset.caption || '';
+    galleryLightboxEyebrow.textContent = 'PERSONAL ARCHIVE / ENLARGED FRAME';
+    if (!galleryLightbox.open) galleryLightbox.showModal();
+  });
+});
+document.querySelectorAll('.image-preview-trigger').forEach(button => {
+  button.addEventListener('click', () => {
+    const image = button.querySelector('img');
+    if (!image || !galleryLightbox || !galleryLightboxImage) return;
+    galleryLightboxImage.src = image.currentSrc || image.src;
+    galleryLightboxImage.alt = image.alt || button.dataset.previewTitle || 'Project screenshot';
+    galleryLightboxTitle.textContent = button.dataset.previewTitle || 'Project screenshot';
+    galleryLightboxCaption.textContent = 'Click outside the image or press Escape to close.';
+    galleryLightboxEyebrow.textContent = 'SOFTWARE & SYSTEMS / FULL-SIZE PREVIEW';
     if (!galleryLightbox.open) galleryLightbox.showModal();
   });
 });
 document.getElementById('galleryLightboxClose')?.addEventListener('click', closeGalleryLightbox);
+galleryLightbox?.addEventListener('keydown', event => {
+  if (event.key === 'Escape') closeGalleryLightbox();
+});
+galleryLightbox?.addEventListener('cancel', event => {
+  event.preventDefault();
+  closeGalleryLightbox();
+});
 galleryLightbox?.addEventListener('click', event => {
-  if (event.target === galleryLightbox) closeGalleryLightbox();
+  if (event.target === galleryLightbox || event.target === galleryLightbox.querySelector('figure')) closeGalleryLightbox();
 });
 galleryLightbox?.addEventListener('close', () => { if (galleryLightboxImage) galleryLightboxImage.src = ''; });
 
